@@ -113,7 +113,7 @@ jobs:
           
           # 解压缩 Pages.zip
           echo "正在解压缩 $FILE_NAME..."
-          unzip -o "$FILE_NAME" -d .
+          unzip -j -o "$FILE_NAME" -d .
           
           if [ $? -ne 0 ]; then
             echo "错误：解压缩失败"
